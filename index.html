@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Gateway Program · Menara Language Center</title>
+<meta name="theme-color" content="#060a2b">
+<meta name="description" content="Étudiez l'anglais en Malaisie avec Menara Language Center. Choisissez votre profil, recevez votre code et rejoignez la communauté.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#f4f6ff;--muted:#b4bde0;--teal:#ffcc00;--teal-d:#ffdb4d;--gold:#ffcc00;--red:#cc0001;--line:rgba(255,255,255,.2);--err:#ff9a92}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;background:#060a2b linear-gradient(180deg,#050824 0%,#0a1352 60%,#1a2a7a 100%) fixed;color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:28px 20px 56px}
+h1,h2{font-family:Sora,system-ui,sans-serif;line-height:1.15;margin:0 0 14px}
+h1{font-size:2rem;font-weight:700}
+h2{font-size:1.45rem;font-weight:700}
+p{margin:0 0 16px;max-width:60ch}
+.brand{margin-bottom:22px}
+.brand b{display:block;font-family:Sora,system-ui,sans-serif;font-size:1.05rem}
+.brand small{color:var(--muted)}
+.brand svg,.hero>svg{display:block;margin-bottom:8px;border-radius:2px}
+.muted{color:var(--muted);font-size:.95rem}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.btn{display:inline-block;width:100%;padding:14px 18px;border:0;border-radius:8px;background:var(--teal);color:#0a1050;font-weight:700;text-align:center;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--teal-d)}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--teal)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.seg{display:block;width:100%;text-align:left;padding:16px 4px 16px 14px;background:none;border:0;border-bottom:1px solid var(--line);border-left:4px solid var(--teal);cursor:pointer}
+.seg:hover{background:rgba(255,204,0,.1)}
+.seg b{display:block;font-size:1.1rem}
+.seg span{color:var(--muted);font-size:.95rem}
+label{display:block;font-weight:700;margin:16px 0 6px}
+input[type=text],input[type=email],input[type=tel],select{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.07)}
+select option{color:#14283c;background:#fff}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin:20px 0}
+.check input{margin-top:5px;width:20px;height:20px;flex:none}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.err{color:var(--err);font-size:.95rem;margin:12px 0 0;min-height:1.2em}
+.back{background:none;border:0;color:var(--muted);padding:0;margin-bottom:20px;cursor:pointer;text-decoration:underline}
+.ticket{border:2px dashed var(--gold);border-radius:12px;padding:18px;margin:8px 0 22px}
+.ticket small{color:var(--muted)}
+.ticket output{display:block;font-family:Sora,system-ui,sans-serif;font-size:2rem;font-weight:700;letter-spacing:.04em;margin:4px 0 10px;word-break:break-all}
+.ticket .copy{background:none;border:0;color:var(--teal-d);font-weight:700;padding:0;cursor:pointer;text-decoration:underline}
+.stack{display:grid;gap:12px}
+.gains{list-style:none;padding:0;margin:0 0 22px}
+.gains li{padding:10px 0 10px 14px;border-left:4px solid var(--gold);margin-bottom:8px}
+.test{background:var(--gold);color:#14283c;padding:6px 10px;font-size:.85rem;text-align:center}
+#photo,#scene{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#photo{background:center/cover;opacity:0}
+#photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,10,43,.78),rgba(6,10,43,.5) 50%,rgba(6,10,43,.88))}
+.has-photo #photo{opacity:1}.has-photo #scene{display:none}
+#scene{transition:opacity .4s}.sub #scene{opacity:.28}
+body:not(.sub) .brand{display:none}
+.hero{padding-top:5vh}
+.hero h1{font-size:clamp(2.7rem,11vw,4.8rem);line-height:.98;letter-spacing:-.01em;margin:16px 0 12px}
+.hero .powered{font-family:Sora,system-ui,sans-serif;font-weight:500;font-size:1.15rem;color:var(--teal);margin-bottom:26px}
+.hero p{text-shadow:0 1px 10px #060a2b}
+.sub .screen{background:rgba(7,11,46,.8);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:22px 20px}
+@media(min-width:900px){main{margin-left:7vw;margin-right:auto}}
+[hidden]{display:none!important}
+@media(prefers-reduced-motion:no-preference){.screen{animation:in .25s ease-out}@keyframes in{from{opacity:0}to{opacity:1}}}
+</style>
+</head>
+<body>
+<div id="photo" aria-hidden="true"></div>
+<svg id="scene" viewBox="0 0 600 700" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+<defs>
+<radialGradient id="glow" cx="50%" cy="100%" r="75%"><stop offset="0" stop-color="#ffcc00" stop-opacity=".4"/><stop offset=".5" stop-color="#cc0001" stop-opacity=".16"/><stop offset="1" stop-color="#0a1352" stop-opacity="0"/></radialGradient>
+<pattern id="win" width="7" height="11" patternUnits="userSpaceOnUse"><rect x="2" y="3" width="3" height="4" fill="#ffd65c" opacity=".4"/></pattern>
+<path id="tw" d="M-36,700V300H-32V262H-28V224H-24V184H-20V152H-16V126H-12V106H-8V92H-4V70H-1.5V28L0,20L1.5,28V70H4V92H8V106H12V126H16V152H20V184H24V224H28V262H32V300H36V700Z"/>
+<symbol id="flag" viewBox="0 0 28 14"><rect width="28" height="14" fill="#fff"/><path d="M0 0h28v1H0zM0 2h28v1H0zM0 4h28v1H0zM0 6h28v1H0zM0 8h28v1H0zM0 10h28v1H0zM0 12h28v1H0z" fill="#cc0001"/><rect width="14" height="8" fill="#010066"/><circle cx="5.2" cy="4" r="2.7" fill="#ffcc00"/><circle cx="6" cy="4" r="2.2" fill="#010066"/><polygon id="star" fill="#ffcc00"/></symbol>
+</defs>
+<rect width="600" height="700" fill="url(#glow)"/>
+<g fill="#0a1048" opacity=".9"><rect x="20" y="560" width="40" height="140"/><rect x="62" y="520" width="34" height="180"/><rect x="100" y="590" width="50" height="110"/><rect x="450" y="540" width="44" height="160"/><rect x="496" y="580" width="38" height="120"/><rect x="540" y="500" width="46" height="200"/></g>
+<line x1="90" y1="230" x2="90" y2="700" stroke="#c9d1f2" stroke-width="2"/>
+<use href="#flag" x="92" y="232" width="120" height="60"/>
+<use href="#tw" x="250" fill="#0b1240" stroke="#5a74d6" stroke-opacity=".5" stroke-width=".6"/>
+<use href="#tw" x="350" fill="#0b1240" stroke="#5a74d6" stroke-opacity=".5" stroke-width=".6"/>
+<use href="#tw" x="250" fill="url(#win)"/><use href="#tw" x="350" fill="url(#win)"/>
+<path d="M286,440h28v10h-28z" fill="#0b1240"/><path d="M286,450L300,474L314,450" fill="none" stroke="#0b1240" stroke-width="4"/>
+</svg>
+<div class="test" id="testBanner" hidden>Mode test : aucune donnée n'est envoyée.</div>
+<main>
+<div class="brand"><svg width="28" height="14" aria-hidden="true"><use href="#flag" width="28" height="14"/></svg><b>Global Gateway Program</b><small>Powered by Menara Language Center</small></div>
+
+<section class="screen hero" id="s-home">
+  <svg width="56" height="28" aria-hidden="true"><use href="#flag" width="56" height="28"/></svg>
+  <h1>Global Gateway<br>Program</h1>
+  <p class="powered">Powered by Menara Language Center</p>
+  <p>Étudiez l'anglais en Malaisie, avec un accompagnement du premier contact jusqu'à l'inscription.</p>
+  <p><b>Pour qui :</b> étudiants, parents, professionnels, agences de voyages et de mobilité internationale.</p>
+  <p><b>Ce que vous y gagnez :</b> une information claire, un contact direct avec l'équipe et une communauté de votre profil.</p>
+  <button class="btn" id="start">Choisir mon profil</button>
+</section>
+
+<section class="screen" id="s-profile" hidden>
+  <h2>Vous êtes…</h2>
+  <div id="segList" role="list"></div>
+</section>
+
+<section class="screen" id="s-explain" hidden>
+  <button class="back" id="backProfile" type="button">Changer de profil</button>
+  <h2 id="eTitle"></h2>
+  <p id="eText"></p>
+  <p><b>Ce que vous recevez :</b></p>
+  <ul class="gains" id="eGains"></ul>
+  <button class="btn" id="goForm" type="button">Continuer</button>
+</section>
+
+<section class="screen" id="s-form" hidden>
+  <button class="back" id="back" type="button">Retour</button>
+  <h2>Recevez votre code</h2>
+  <p>Dernière étape : remplissez ces champs. Votre code personnel s'affiche ensuite, avec l'accès au groupe WhatsApp de votre profil.</p>
+  <form id="form" novalidate>
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" autocomplete="email" required>
+    <label for="pays">Pays</label>
+    <select id="pays" name="pays" required></select>
+    <div id="qWrap" hidden><label for="q" id="qLabel"></label><input type="text" id="q" name="q"></div>
+    <label for="wa">WhatsApp (facultatif)</label>
+    <input type="tel" id="wa" name="wa" autocomplete="tel" placeholder="+228 …">
+    <div class="hp" aria-hidden="true"><label for="site">Ne pas remplir</label><input type="text" id="site" name="site" tabindex="-1" autocomplete="off"></div>
+    <label class="check"><input type="checkbox" id="consent" required><span>J'accepte de recevoir des emails de Menara Language Center sur ce programme. Je peux me désinscrire à tout moment. <a id="privacy" href="#" target="_blank" rel="noopener">Confidentialité</a></span></label>
+    <button class="btn" id="submit" type="submit">Recevoir mon code</button>
+    <p class="err" id="err" role="alert"></p>
+  </form>
+</section>
+
+<section class="screen" id="s-done" hidden>
+  <h2>C'est enregistré, <span id="dName"></span></h2>
+  <div class="ticket">
+    <small>Votre code personnel</small>
+    <output id="dCode"></output>
+    <button class="copy" id="copy" type="button">Copier le code</button>
+  </div>
+  <p>Gardez ce code : donnez-le lors de vos échanges avec nous. Un email de bienvenue arrive dans quelques minutes (vérifiez aussi vos courriers indésirables).</p>
+  <div class="stack">
+    <a class="btn" id="grp" href="#" target="_blank" rel="noopener"></a>
+    <a class="btn alt" id="wlink" href="#" target="_blank" rel="noopener">Écrire à Menara sur WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<script>
+/* ===== CONFIGURATION : seul endroit à modifier ===== */
+const CONFIG = {
+  MODE_TEST: false,                         // passer à false pour envoyer réellement
+  WORKER_URL: "https://menara-leads.bluezonehills.workers.dev/lead", // relais vers Brevo (étape 3)
+  WHATSAPP_OFFICIEL: "22800000000",        // numéro sans + ni espaces
+  PRIVACY_URL: "confidentialite.html",
+  FUNNEL_VERSION: "1",
+  HERO_IMAGE: ""                           // optionnel : "images/hero.jpg" (photo libre de droits) remplace le décor illustré
+};
+/* Ajouter un segment = ajouter une ligne à la fin. Ne jamais changer ni réutiliser un id. */
+const SEGMENTS = [
+  {id:"ETU", ordre:1, actif:true, label:"Étudiant", court:"Je veux étudier l'anglais en Malaisie",
+   titre:"Votre projet d'études en Malaisie", texte:"Menara Language Center forme en anglais en Malaisie. Le programme vous guide pas à pas, de la découverte des formations jusqu'à votre inscription.",
+   gains:["Les programmes de formation en anglais disponibles","Les démarches à suivre, étape par étape","Un contact direct avec l'équipe et un groupe d'étudiants comme vous"],
+   question:{attr:"NIVEAU_ETUDES", label:"Votre niveau d'études actuel"}, whatsapp:"https://chat.whatsapp.com/REMPLACER_ETU", groupe:"Rejoindre le groupe des étudiants"},
+  {id:"PRO", ordre:2, actif:true, label:"Professionnel", court:"Je veux m'associer ou relayer le programme",
+   titre:"Collaborer avec le programme", texte:"Vous avez un réseau ou une activité liée à l'éducation ou à l'orientation ? Le programme s'ouvre aux professionnels qui souhaitent s'associer et relayer l'offre.",
+   gains:["Comprendre comment fonctionne l'association","Les informations pour présenter le programme autour de vous","Un groupe d'échange entre professionnels"],
+   question:{attr:"PROFESSION", label:"Votre profession"}, whatsapp:"https://chat.whatsapp.com/REMPLACER_PRO", groupe:"Rejoindre le groupe des professionnels"},
+  {id:"AGE", ordre:3, actif:true, label:"Agence", court:"Agence de voyages ou de mobilité internationale",
+   titre:"Devenir agence partenaire", texte:"Le programme développe un réseau d'agences de voyages et de mobilité internationale pour orienter des candidats vers Menara Language Center en Malaisie.",
+   gains:["La proposition de partenariat et le dossier de présentation","Les conditions de collaboration, présentées clairement","Un groupe réservé aux agences et un contact direct avec l'équipe"],
+   question:{attr:"NOM_AGENCE", label:"Nom de votre agence"}, whatsapp:"https://chat.whatsapp.com/REMPLACER_AGE", groupe:"Rejoindre le groupe des agences"},
+  {id:"PAR", ordre:4, actif:true, label:"Parent", court:"Mon enfant veut étudier à l'étranger",
+   titre:"Accompagner votre enfant", texte:"Envoyer son enfant étudier à l'étranger demande des réponses claires. Le programme vous informe et reste à votre disposition.",
+   gains:["Une présentation claire des formations et de leur déroulement","Les réponses à vos questions, directement auprès de l'équipe","Un groupe de parents pour échanger"],
+   question:null, whatsapp:"https://chat.whatsapp.com/REMPLACER_PAR", groupe:"Rejoindre le groupe des parents"}
+];
+/* Liste provisoire, à confirmer. XX = pays hors liste. */
+const PAYS = [
+  {r:"Afrique de l'Ouest", l:[["TG","Togo"],["BJ","Bénin"],["BF","Burkina Faso"],["CI","Côte d'Ivoire"],["ML","Mali"],["NE","Niger"],["SN","Sénégal"],["GN","Guinée"],["MR","Mauritanie"]]},
+  {r:"Afrique du Nord", l:[["MA","Maroc"],["DZ","Algérie"],["TN","Tunisie"]]},
+  {r:"Autre", l:[["XX","Autre pays"]]}
+];
+/* ===== FIN CONFIGURATION ===== */
+
+const $ = id => document.getElementById(id);
+const screens = ["s-home","s-profile","s-explain","s-form","s-done"];
+const show = id => { screens.forEach(s => $(s).hidden = s !== id); document.body.classList.toggle("sub", id !== "s-home"); window.scrollTo(0,0); };
+const segs = SEGMENTS.filter(s => s.actif).sort((a,b) => a.ordre - b.ordre);
+let current = null, code = "";
+
+const qs = new URLSearchParams(location.search);
+const track = { source: qs.get("utm_source") || "direct", campagne: qs.get("utm_campaign") || "" };
+
+if (CONFIG.MODE_TEST) $("testBanner").hidden = false;
+(() => { const p = []; for (let i = 0; i < 28; i++) { const r = i % 2 ? 1.1 : 2.5, a = Math.PI * i / 14 - Math.PI / 2; p.push((8.4 + r * Math.cos(a)).toFixed(2) + "," + (4 + r * Math.sin(a)).toFixed(2)); } $("star").setAttribute("points", p.join(" ")); })();
+if (matchMedia("(min-width:900px)").matches) $("scene").setAttribute("preserveAspectRatio", "xMaxYMax meet");
+if (CONFIG.HERO_IMAGE) { $("photo").style.backgroundImage = "url('" + CONFIG.HERO_IMAGE + "')"; document.body.classList.add("has-photo"); }
+$("privacy").href = CONFIG.PRIVACY_URL;
+
+segs.forEach(s => {
+  const b = document.createElement("button");
+  b.className = "seg"; b.type = "button"; b.setAttribute("role","listitem");
+  b.innerHTML = "<b></b><span></span>";
+  b.firstChild.textContent = s.label; b.lastChild.textContent = s.court;
+  b.onclick = () => choose(s.id);
+  $("segList").appendChild(b);
+});
+
+PAYS.forEach(g => {
+  const og = document.createElement("optgroup"); og.label = g.r;
+  g.l.forEach(([c,n]) => og.appendChild(new Option(n, c)));
+  $("pays").appendChild(og);
+});
+$("pays").insertAdjacentHTML("afterbegin", '<option value="" selected disabled>Choisir un pays</option>');
+
+function choose(id){
+  current = segs.find(s => s.id === id); if (!current) return show("s-profile");
+  $("eTitle").textContent = current.titre; $("eText").textContent = current.texte;
+  $("eGains").replaceChildren(...current.gains.map(g => { const li = document.createElement("li"); li.textContent = g; return li; }));
+  $("qWrap").hidden = !current.question;
+  if (current.question){ $("qLabel").textContent = current.question.label; $("q").required = true; } else { $("q").required = false; }
+  history.replaceState(null,"","#"+id.toLowerCase());
+  show("s-explain");
+}
+$("start").onclick = () => show("s-profile");
+$("goForm").onclick = () => show("s-form");
+$("back").onclick = () => show("s-explain");
+$("backProfile").onclick = () => { history.replaceState(null,"",location.pathname+location.search); show("s-profile"); };
+const hash = location.hash.replace("#","").toUpperCase();
+if (segs.some(s => s.id === hash)) choose(hash);
+
+function genCode(prefix){
+  const A = "ABCDEFGHJKMNPQRSTUVWXYZ23456789"; // sans 0 O 1 I L
+  const r = crypto.getRandomValues(new Uint32Array(6));
+  return prefix + "-" + Array.from(r, n => A[n % A.length]).join("");
+}
+function fail(msg){ $("err").textContent = msg; }
+
+$("form").addEventListener("submit", async e => {
+  e.preventDefault(); fail("");
+  const email = $("email").value.trim(), prenom = $("prenom").value.trim();
+  if (!prenom) return fail("Indiquez votre prénom.");
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return fail("Indiquez une adresse email valide.");
+  if (!$("pays").value) return fail("Choisissez votre pays.");
+  if (current.question && !$("q").value.trim()) return fail("Répondez à la question « " + current.question.label + " ».");
+  if (!$("consent").checked) return fail("Cochez la case pour recevoir nos emails.");
+  if ($("site").value) return show("s-home"); // robot
+
+  code = genCode(current.id);
+  const attributes = {
+    PRENOM: prenom, SEGMENT: current.id, CODE: code, STAGE: "Lead", PAYS: $("pays").value,
+    WHATSAPP: $("wa").value.trim(), SOURCE: track.source, CAMPAGNE: track.campagne,
+    DATE_INSCRIPTION: new Date().toISOString(), CONSENTEMENT: true, VERSION_FUNNEL: CONFIG.FUNNEL_VERSION
+  };
+  if (current.question) attributes[current.question.attr] = $("q").value.trim();
+  const payload = { email, segment: current.id, attributes };
+
+  const btn = $("submit"); btn.disabled = true; btn.textContent = "Envoi en cours…";
+  try {
+    if (CONFIG.MODE_TEST){ console.log("MODE TEST", payload); }
+    else {
+      const res = await fetch(CONFIG.WORKER_URL, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(payload)});
+      if (!res.ok) throw new Error("http " + res.status);
+    }
+    done(prenom);
+  } catch (x){
+    fail("L'envoi a échoué. Vérifiez votre connexion puis cliquez à nouveau sur « Recevoir mon code ».");
+    btn.disabled = false; btn.textContent = "Recevoir mon code";
+  }
+});
+
+function done(prenom){
+  $("dName").textContent = prenom; $("dCode").textContent = code;
+  $("grp").textContent = current.groupe; $("grp").href = current.whatsapp;
+  const msg = "Bonjour Menara, je suis " + current.label.toLowerCase() + ". Mon code : " + code;
+  $("wlink").href = "https://wa.me/" + CONFIG.WHATSAPP_OFFICIEL + "?text=" + encodeURIComponent(msg);
+  show("s-done");
+}
+$("copy").onclick = async () => {
+  try { await navigator.clipboard.writeText(code); $("copy").textContent = "Code copié"; }
+  catch { $("copy").textContent = "Copiez le code à la main"; }
+};
+</script>
+</body>
+</html>
+
