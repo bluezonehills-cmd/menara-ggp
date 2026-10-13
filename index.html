@@ -153,7 +153,7 @@ body:not(.sub) .brand{display:none}
 const CONFIG = {
   MODE_TEST: false,                         // passer à false pour envoyer réellement
   WORKER_URL: "https://menara-leads.bluezonehills.workers.dev/lead", // relais vers Brevo (étape 3)
-  WHATSAPP_OFFICIEL: "22800000000",        // numéro sans + ni espaces
+  WHATSAPP_OFFICIEL: "22890661256",        // numéro sans + ni espaces
   PRIVACY_URL: "confidentialite.html",
   FUNNEL_VERSION: "1",
   HERO_IMAGE: ""                           // optionnel : "images/hero.jpg" (photo libre de droits) remplace le décor illustré
@@ -163,19 +163,19 @@ const SEGMENTS = [
   {id:"ETU", ordre:1, actif:true, label:"Étudiant", court:"Je veux étudier l'anglais en Malaisie",
    titre:"Votre projet d'études en Malaisie", texte:"Menara Language Center forme en anglais en Malaisie. Le programme vous guide pas à pas, de la découverte des formations jusqu'à votre inscription.",
    gains:["Les programmes de formation en anglais disponibles","Les démarches à suivre, étape par étape","Un contact direct avec l'équipe et un groupe d'étudiants comme vous"],
-   question:{attr:"NIVEAU_ETUDES", label:"Votre niveau d'études actuel"}, whatsapp:"https://chat.whatsapp.com/REMPLACER_ETU", groupe:"Rejoindre le groupe des étudiants"},
+   question:{attr:"NIVEAU_ETUDES", label:"Votre niveau d'études actuel"}, whatsapp:"https://chat.whatsapp.com/GFKbvrd4sfZAAI7gyTQMd3", groupe:"Rejoindre le groupe des étudiants"},
   {id:"PRO", ordre:2, actif:true, label:"Professionnel", court:"Je veux m'associer ou relayer le programme",
    titre:"Collaborer avec le programme", texte:"Vous avez un réseau ou une activité liée à l'éducation ou à l'orientation ? Le programme s'ouvre aux professionnels qui souhaitent s'associer et relayer l'offre.",
    gains:["Comprendre comment fonctionne l'association","Les informations pour présenter le programme autour de vous","Un groupe d'échange entre professionnels"],
-   question:{attr:"PROFESSION", label:"Votre profession"}, whatsapp:"https://chat.whatsapp.com/REMPLACER_PRO", groupe:"Rejoindre le groupe des professionnels"},
+   question:{attr:"PROFESSION", label:"Votre profession"}, whatsapp:"https://chat.whatsapp.com/DcMv1GmcryDKUArQbjzJ1z", groupe:"Rejoindre le groupe des professionnels"},
   {id:"AGE", ordre:3, actif:true, label:"Agence", court:"Agence de voyages ou de mobilité internationale",
    titre:"Devenir agence partenaire", texte:"Le programme développe un réseau d'agences de voyages et de mobilité internationale pour orienter des candidats vers Menara Language Center en Malaisie.",
    gains:["La proposition de partenariat et le dossier de présentation","Les conditions de collaboration, présentées clairement","Un groupe réservé aux agences et un contact direct avec l'équipe"],
-   question:{attr:"NOM_AGENCE", label:"Nom de votre agence"}, whatsapp:"https://chat.whatsapp.com/REMPLACER_AGE", groupe:"Rejoindre le groupe des agences"},
+   question:{attr:"NOM_AGENCE", label:"Nom de votre agence"}, whatsapp:"https://chat.whatsapp.com/KPWOqUP1eKY1vTj8D5tLar", groupe:"Rejoindre le groupe des agences"},
   {id:"PAR", ordre:4, actif:true, label:"Parent", court:"Mon enfant veut étudier à l'étranger",
    titre:"Accompagner votre enfant", texte:"Envoyer son enfant étudier à l'étranger demande des réponses claires. Le programme vous informe et reste à votre disposition.",
    gains:["Une présentation claire des formations et de leur déroulement","Les réponses à vos questions, directement auprès de l'équipe","Un groupe de parents pour échanger"],
-   question:null, whatsapp:"https://chat.whatsapp.com/REMPLACER_PAR", groupe:"Rejoindre le groupe des parents"}
+   question:null, whatsapp:"https://chat.whatsapp.com/CdDFemxGhipFtUagmabXZU", groupe:"Rejoindre le groupe des parents"}
 ];
 /* Liste provisoire, à confirmer. XX = pays hors liste. */
 const PAYS = [
@@ -286,4 +286,5 @@ $("copy").onclick = async () => {
 </script>
 </body>
 </html>
+
 
